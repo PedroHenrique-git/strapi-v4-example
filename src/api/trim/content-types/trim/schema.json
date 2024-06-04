@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trims",
+  "info": {
+    "singularName": "trim",
+    "pluralName": "trims",
+    "displayName": "Versões"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "publishedAt",
+      "createdBy",
+      "updatedBy"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "multiple": false
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

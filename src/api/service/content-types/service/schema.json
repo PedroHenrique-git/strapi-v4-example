@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "services",
+  "info": {
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Serviços pdf"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "comment": ""
+  },
+  "attributes": {
+    "modelName": {
+      "type": "string",
+      "required": true
+    },
+    "pdf": {
+      "type": "media",
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "multiple": false
+    }
+  }
+}

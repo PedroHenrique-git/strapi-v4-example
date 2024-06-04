@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "model",
+    "pluralName": "models",
+    "displayName": "Modelos"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "publishedAt",
+      "createdBy",
+      "updatedBy"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "legalText": {
+      "type": "string",
+      "required": true
+    },
+    "hero": {
+      "type": "media",
+      "allowedTypes": ["images", "files", "videos", "audios"],
+      "multiple": false
+    },
+    "trims": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::trim.trim"
+    }
+  }
+}
